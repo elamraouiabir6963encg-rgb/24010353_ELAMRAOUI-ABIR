@@ -1,6 +1,5 @@
-# EL Amraoui Abir ENCG SETTAT Finance G2
+# EL Amraoui Abir ENCG SETTAT Finance G2                    ![Abir](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/Abir.png?raw=true)
 # Apogé: 24010353
-![Abir](https://github.com/user-attachments/assets/19b86bed-ac87-4f8e-938c-862cf3722380)
 
 # 🏦 Analyse Exploratoire et Modélisation Prédictive  
 ## Dataset Bank Marketing (UCI)
