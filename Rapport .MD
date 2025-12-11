@@ -83,7 +83,7 @@ Le dataset comporte :
 Ces problèmes perturbent les modèles de Machine Learning car :
     *   Les distributions biaisées trompent les algorithmes,
     *   Les outliers influencent les décisions,
-    *   Les valeurs manquantes empêchent certains algorithmes de s’exécuter. 
+    *   Les valeurs manquantes empêchent certains algorithmes de s’exécuter.  
 ### La fuite des données
 Le modèle final devra toujours éviter :
 *   Calcul de moyennes sur l’ensemble du dataset,
