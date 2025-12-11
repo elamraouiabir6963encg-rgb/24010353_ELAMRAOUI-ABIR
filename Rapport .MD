@@ -74,16 +74,16 @@ df['duration_min'] = df['duration'] / 60
 df['total_contacts'] = df['campaign'] + df['previous']
 ````
 ## 3. Analyse Approfondie : Nettoyage 
-
 ### Le Problème des données bruts
 Le dataset comporte :
-    *   Des valeurs manquantes (job, education, contact, poutcome),
-    *   Des valeurs extrêmes (ex : balance, duration, previous),
-    *   Des distributions fortement asymétriques. 
+*   Des valeurs manquantes (job, education, contact, poutcome),
+*   Des valeurs extrêmes (ex : balance, duration, previous),
+*   Des distributions fortement asymétriques.
 Ces problèmes perturbent les modèles de Machine Learning car :
-    *   Les distributions biaisées trompent les algorithmes,
-    *   Les outliers influencent les décisions,
-    *   Les valeurs manquantes empêchent certains algorithmes de s’exécuter.  
+*   Les distributions biaisées trompent les algorithmes,
+*   Les outliers influencent les décisions,
+*   Les valeurs manquantes empêchent certains algorithmes de s’exécuter.  
+Ici, l’objectif étant l’EDA, la priorité est l’analyse, pas la performance.
 ### La fuite des données
 Le modèle final devra toujours éviter :
 *   Calcul de moyennes sur l’ensemble du dataset,
