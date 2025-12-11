@@ -136,6 +136,7 @@ rf_model = Pipeline(steps=[
 rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
 
+```
 ---
 
 # 5. RÉSULTATS DE L'ANALYSE EXPLORATOIRE (EDA)
