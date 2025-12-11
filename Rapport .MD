@@ -271,6 +271,24 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 📌 Interprétation : La majorité des clients est contactée peu de fois, signe de ciblage sélectif.
 
+### RÉGRESSION LOGISTIQUE
+![Réression logisitique](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20du%20nombre%20total%20de%20contacts.png?raw=true)
+
+📌 Interprétation :  
+* La régression logistique fournit une base simple pour prédire l'abonnement.
+* Si le recall sur la classe 1 (yes) est faible, le modèle a du mal à détecter les clients positifs.
+* Une bonne précision signifie peu de faux positifs.
+* Ce modèle est linéaire : il peut sous-performer si les relations ne sont pas linéaires.
+
+### RANDOM FOREST
+![Random forest](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20du%20nombre%20total%20de%20contacts.png?raw=true)
+
+📌 Interprétation :
+* Ce modèle est souvent plus performant car il capture les non-linéarités.
+* Il réduit le surapprentissage grâce à l’agrégation de nombreux arbres.
+* Si le recall et la précision sont supérieurs à ceux de la régression logistique, le modèle est meilleur.
+* Random Forest est généralement le meilleur choix sur Bank Marketing.
+
 ---
 
 # 6. INTERPRÉTATION GÉNÉRALE
@@ -286,17 +304,11 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 ---
 
 # 7. CONCLUSION
-
----
-
-## Limites
-
-* valeurs manquantes
-* déséquilibre de classes
-* variable biaisante `duration`
-* absence de normalisation
-* pas de modèle ML construit
-
+* L’EDA révèle la distribution, la présence potentielle d’outliers et les relations entre variables.
+* Le feature engineering enrichit les données pour améliorer les modèles.
+* La régression logistique sert de modèle de base linéaire.
+* Le Random Forest capture des relations plus complexes et donne souvent de meilleurs résultats.
+* La comparaison des métriques permet de choisir le meilleur modèle pour la prédiction de l'abonnement.
 ---
 
 ## Pistes d’amélioration
