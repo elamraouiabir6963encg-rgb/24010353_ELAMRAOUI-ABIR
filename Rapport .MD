@@ -272,7 +272,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 📌 Interprétation : La majorité des clients est contactée peu de fois, signe de ciblage sélectif.
 
 ### RÉGRESSION LOGISTIQUE
-![Réression logisitique](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20du%20nombre%20total%20de%20contacts.png?raw=true)
+![Réression logisitique](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/R%C3%A9gression%20logistique.png?raw=true)
 
 📌 Interprétation :  
 * La régression logistique fournit une base simple pour prédire l'abonnement.
