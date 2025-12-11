@@ -281,7 +281,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 * Ce modèle est linéaire : il peut sous-performer si les relations ne sont pas linéaires.
 
 ### RANDOM FOREST
-![Random forest](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20du%20nombre%20total%20de%20contacts.png?raw=true)
+![Random forest](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/Random%20forest.png?raw=true)
 
 📌 Interprétation :
 * Ce modèle est souvent plus performant car il capture les non-linéarités.
