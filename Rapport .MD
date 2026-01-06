@@ -294,7 +294,7 @@ La matrice de corrélation montre globalement de faibles corrélations entre les
 
 --- FEATURE ENGINEERING ---
 ✅ Nouvelles variables créées :
-![feature engineering](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Matrice%20de%20corr%C3%A9lation.png?raw=true)
+![feature engineering](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/feature%20engineering.png?raw=true)
 
 Le feature engineering vise à enrichir le jeu de données initial en créant de nouvelles variables plus interprétables et plus pertinentes pour la modélisation prédictive. Dans cette analyse, trois nouvelles variables ont été construites:
 
