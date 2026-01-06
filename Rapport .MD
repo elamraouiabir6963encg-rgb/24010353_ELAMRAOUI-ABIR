@@ -182,7 +182,7 @@ Le code présenté ci-dessus illustre l’intégralité du pipeline de traitemen
 
 L’encodage des variables catégorielles via `OneHotEncoder` et l’utilisation d’un `ColumnTransformer` garantissent un prétraitement optimal avant l’entraînement des modèles. Enfin, la division des données en ensembles d’apprentissage et de test (`train_test_split`) respecte la distribution de la classe cible (`stratify=y`), assurant une évaluation fiable des performances.
 
-Ce pipeline technique constitue une base solide pour la prédiction client, tout en tenant compte de l’enjeu prioritaire du projet : **minimiser les faux négatifs en maximisant le rappel de la classe positive**, dans un contexte où le coût des erreurs est fortement asymétrique.
+Ce pipeline technique constitue une base solide pour la prédiction client, tout en tenant compte de l’enjeu prioritaire du projet : **Minimiser les faux négatifs en maximisant le rappel de la classe positive, dans un contexte où le coût des erreurs est fortement asymétrique.**
 
 ---
 
