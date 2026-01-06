@@ -7,26 +7,48 @@
 
 ---
 
-## 1. Problématique Métier et Objectifs de la Mission
+## 1. Problématique, métier et objectifs de la mission
 
-### Le Problème (Business Case)
-Les banques utilisent des campagnes de télé‑marketing pour convaincre les clients de souscrire à un dépôt à terme. Or :
-    *   Ces campagnes coûtent cher,
-    *   La majorité des clients ne répondent pas favorablement,
-    *   Un mauvais ciblage = perte d’argent + surcharge des centres d’appels. 
-*   **Objectif :** Créer un "Assistant IA" pour prédire quels clients sont susceptibles de souscrire afin d'optimiser les campagnes.
-*   **L'Enjeu critique :** La matrice des coûts d'erreur est asymétrique.
-    *   Faux Positif: On appelle un client qui ne sera jamais intéressé → perte de temps et coût opérationnel.
-    *   Faux Négatif: on rate un client réellement intéressé → manque à gagner commercial. **L'IA doit donc maximiser le rappel pour ne pas manquer des clients intéressés.**
+### Problématique du métier
+Dans le secteur bancaire, les campagnes de télé-marketing constituent un levier stratégique pour promouvoir les dépôts à terme, un produit d’épargne essentiel pour assurer la liquidité et la stabilité financière des banques.
+Cependant, ces campagnes présentent plusieurs limites opérationnelles et financières :
+    *   Coûts élevés liés aux centres d’appels.
+    *   Taux de conversion faible, car la majorité des clients contactés ne souscrivent pas au produit.
+    *   Ciblage inefficace, entraînant une surcharge des agents et une allocation non optimale du budget marketing. 
+    *   Perte d’opportunités commerciales,  lorsque des clients potentiellement intéressés ne sont pas identifiés à temps.
+Ainsi, la banque se trouve confrontée à un défi majeur :
+*   **Comment identifier, avant même l’appel, les clients ayant la plus forte probabilité de souscrire à un dépôt à terme, afin d’optimiser les ressources et maximiser le rendement des campagnes ?** 
 
-### Les Données (L'Input)
-On utilise le *Bank Marketing (UCI)*.
-*   Profil client : âge, métier, éducation…
-*   Situation financière : solde bancaire
-*   Historique marketing : nombre de contacts, résultat des anciennes campagnes…
-*   cible : y = oui/non (a souscrit ou non)
-*   Format : 45 211 observations, 17 colonnes.
+### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
+Contrairement à des problématiques classiques de classification, ici toutes les erreurs n’ont pas le même impact :
+    *   Faux Positif: un client est prédit comme intéressé alors qu’il ne souscrira pas                                                          → Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels.
+    *   Faux Négatif: un client réellement intéressé est classé comme non pertinent                                                              → Manque à gagner commercial direct, perte potentielle de valeur client à long terme. 
+        ➤  Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels
+Faux Négatif (FN) : un client réellement intéressé est classé comme non pertinent 
+         ➤  Manque à gagner commercial direct, perte potentielle de valeur client à long terme
+
+Dans ce contexte, la priorité stratégique n’est pas seulement la précision, mais surtout :
+**Maximiser le rappel de la classe positive, afin de réduire au maximum les faux négatifs et ne pas laisser passer les clients intéressés.**
+
+### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
+La mission consiste donc à concevoir un Assistant IA d’aide au ciblage client, basé sur le machine learning, permettant de :
+    *   Analyser le comportement et le profil client.
+    *   Prédire la probabilité de souscription avant le contact téléphonique.
+    *   Optimiser le ciblage des campagnes marketing. 
+    *   Réduire les coûts opérationnels liés aux appels non pertinents.
+    *   Augmenter le taux de conversion et le rendement global des campagnes.
+    *   Fournir un outil scalable pouvant être intégré dans un système CRM bancaire.
+
+### Les Données utilisées (L’Input du Modèle)
+Pour répondre à cette mission, nous exploitons le dataset *Bank Marketing (UCI)*, qui contient des données historiques issues de campagnes réelles :
+*   Profil socio-démographique : âge, profession, niveau d’éducation, situation familiale…
+*   Indicateurs financiers : solde bancaire (balance)
+*   Historique marketing : nombre de contacts lors de la campagne (campaign), résultat des campagnes précédentes (poutcome), nombre de contacts antérieurs (previous), délai depuis le dernier contact (pdays)…
+*   Variable cible (y) : souscription au dépôt à terme → yes ou no
+*   Taille et format : 45 211 observations, 17 variables, données tabulaires, mélangeant variables numériques et catégorielles
+Ces données permettent au modèle d’apprendre à partir de tendances comportementales réelles, tout en tenant compte des contraintes économiques du métier.
 ---
+
 ## 2. Le Code Python simplifié
 
 ```python
