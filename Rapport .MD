@@ -188,8 +188,6 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 
 # 5. RÉSULTATS DE L'ANALYSE EXPLORATOIRE (EDA)
 
----
-
 ## 5.1 Aperçu des données
 ![Aperçu des données](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Aper%C3%A7u%20des%20donn%C3%A9es.png?raw=true)
 
@@ -209,7 +207,6 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 - La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
 - Une asymétrie indique une concentration des valeurs vers une borne.
 - La présence de pics suggère des groupes de clients distincts.
-
 
 ### Balance
 ![Distribbution de Balance](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20Balance.png?raw=true)
