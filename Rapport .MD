@@ -47,6 +47,7 @@ Pour répondre à cette mission, nous exploitons le dataset *Bank Marketing (UCI
 *   Variable cible (y) : souscription au dépôt à terme → yes ou no
 *   Taille et format : 45 211 observations, 17 variables, données tabulaires, mélangeant variables numériques et catégorielles
 Ces données permettent au modèle d’apprendre à partir de tendances comportementales réelles, tout en tenant compte des contraintes économiques du métier.
+![Aperçu des données](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Aper%C3%A7u%20des%20donn%C3%A9es.png?raw=true)
 ---
 
 ## 2. Le Code Python simplifié
@@ -188,17 +189,14 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 
 # 5. RÉSULTATS DE L'ANALYSE EXPLORATOIRE (EDA)
 
-## 5.1 Aperçu des données
-![Aperçu des données](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Aper%C3%A7u%20des%20donn%C3%A9es.png?raw=true)
-
-## 5.2 Statistiques descriptives
+## 5.1 Statistiques descriptives
 ![Statistiques descreptives](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Statistiques%20descreptives.png?raw=true)
 
 📌Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 ---
 
-# 5.3 Histogrammes – Distributions
+# 5.2 Histogrammes – Distributions
 
 ### Age
 ![Distrtibution de Age](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20Age.png?raw=true)
@@ -258,7 +256,7 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 
 ---
 
-# 5.4 BOXPLOTS 
+# 5.3 BOXPLOTS 
 
 ### Age
 ![Boxplot de age](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20age.png?raw=true)
@@ -316,7 +314,7 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 - Une boîte large indique une forte dispersion.
 - Une asymétrie de la boîte suggère une distribution biaisée.
 
-# 5.5 HEATMAP – Corrélations
+# 5.4 HEATMAP – Corrélations
 ![Matrice de corrélation](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Matrice%20de%20corr%C3%A9lation.png?raw=true)
 
 📌 Interprétation globale des corrélations :
