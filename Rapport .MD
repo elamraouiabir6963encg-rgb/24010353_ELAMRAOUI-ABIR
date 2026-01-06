@@ -293,7 +293,9 @@ La variable previous présente une dispersion faible pour la majorité des obser
 La matrice de corrélation montre globalement de faibles corrélations entre les variables numériques, indiquant une faible redondance de l’information. La variable duration se distingue par une corrélation plus élevée avec la variable cible, ce qui confirme son pouvoir explicatif. L’absence de multi-colinéarité forte est favorable à l’utilisation de modèles comme la régression logistique.
 
 --- FEATURE ENGINEERING ---
+
 ✅ Nouvelles variables créées :
+
 ![feature engineering](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/feature%20engineering.png?raw=true)
 
 Le feature engineering vise à enrichir le jeu de données initial en créant de nouvelles variables plus interprétables et plus pertinentes pour la modélisation prédictive. Dans cette analyse, trois nouvelles variables ont été construites:
