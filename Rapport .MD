@@ -240,6 +240,7 @@ La distribution de pdays met en évidence une forte concentration sur certaines 
 
 📌 Interprétation - previous :
 La variable previous montre que la majorité des clients n’a eu que peu ou pas de contacts lors de campagnes précédentes. Cela suggère que la base clients est régulièrement renouvelée et que les campagnes antérieures ont un impact limité pour une grande partie de la population.
+
 ---
 
 # 5.3 BOXPLOTS 
@@ -345,6 +346,7 @@ Les performances obtenues avec le Random Forest sont globalement supérieures à
 
 # 6.3 Analyse comparative
 En comparaison, la régression logistique offre une bonne lisibilité des résultats mais montre des limites face à la complexité des données, tandis que le Random Forest privilégie la performance prédictive au détriment de l’interprétabilité. Le choix final du modèle dépend donc d’un compromis entre compréhension métier et efficacité opérationnelle.
+
 ---
 
 # 7. Conclusion
