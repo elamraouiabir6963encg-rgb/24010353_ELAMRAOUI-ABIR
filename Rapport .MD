@@ -32,12 +32,12 @@ Dans ce contexte, la priorité stratégique n’est pas seulement la précision,
 
 ### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
 La mission consiste donc à concevoir un Assistant IA d’aide au ciblage client, basé sur le machine learning, permettant de :
-    *   Analyser le comportement et le profil client.
-    *   Prédire la probabilité de souscription avant le contact téléphonique.
-    *   Optimiser le ciblage des campagnes marketing. 
-    *   Réduire les coûts opérationnels liés aux appels non pertinents.
-    *   Augmenter le taux de conversion et le rendement global des campagnes.
-    *   Fournir un outil scalable pouvant être intégré dans un système CRM bancaire.
+*   Analyser le comportement et le profil client.
+*   Prédire la probabilité de souscription avant le contact téléphonique.
+*   Optimiser le ciblage des campagnes marketing. 
+*   Réduire les coûts opérationnels liés aux appels non pertinents.
+*   Augmenter le taux de conversion et le rendement global des campagnes.
+*   Fournir un outil scalable pouvant être intégré dans un système CRM bancaire.
 
 ### Les Données utilisées (L’Input du Modèle)
 Pour répondre à cette mission, nous exploitons le dataset *Bank Marketing (UCI)*, qui contient des données historiques issues de campagnes réelles :
