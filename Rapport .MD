@@ -193,7 +193,7 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 ## 5.1 Statistiques descriptives
 ![Statistiques descreptives](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Statistiques%20descreptives.png?raw=true)
 
-📌Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
+📌La différence observée entre la moyenne et la médiane pour plusieurs variables indique des distributions asymétriques, souvent dues à la présence de valeurs extrêmes. 
 
 ---
 
@@ -203,58 +203,43 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 ![Distrtibution de Age](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20Age.png?raw=true)
 
 📌 Interprétation - age :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+Une concentration importante des clients dans les classes d’âge intermédiaires entre 30 et 60 ans. Cette distribution asymétrique suggère que la clientèle bancaire est majoritairement composée d’adultes actifs, ce qui est cohérent avec la cible des produits d’épargne à terme. La présence de clients très jeunes ou très âgés reste marginale, indiquant des segments spécifiques pouvant nécessiter des stratégies marketing différenciées.
 
 ### Balance
 ![Distribbution de Balance](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20Balance.png?raw=true)
 
 📌 Interprétation - balance :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+La distribution du solde bancaire est fortement asymétrique à droite, avec une majorité de clients présentant des soldes faibles ou proches de zéro, et quelques valeurs très élevées. Cette forte dispersion met en évidence la présence d’outliers, typique des données financières.
 
 ### Day of week
 ![Distribbution de pdays_of_week](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20day_of_week.png?raw=true)
 
 📌 Interprétation - day_of_week :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+L’histogramme du jour de la semaine montre une répartition relativement homogène des appels marketing sur les différents jours ouvrables. Cela suggère une organisation équilibrée des campagnes de contact, sans concentration excessive sur un jour spécifique, ce qui limite les biais temporels dans les données.
 
 ### Duration
 ![Distribbution de duration](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20duration.png?raw=true)
 
 📌 Interprétation - duration :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+La durée des appels présente une distribution très asymétrique, avec une majorité d’appels courts et un faible nombre d’appels très longs. Cette variable est particulièrement discriminante, car les appels plus longs sont souvent associés à un intérêt plus marqué du client. Toutefois, son utilisation doit être prudente, car elle peut introduire une fuite de données si elle est observée après la décision de souscription.
 
 ### Campaign
 ![Distribbution de campaign](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20campaign.png?raw=true)
 
 📌 Interprétation - campaign :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+La majorité des clients est contactée un nombre limité de fois durant une campagne, tandis qu’un petit nombre de clients fait l’objet de sollicitations répétées. Cette asymétrie reflète une stratégie de relance ciblée, mais peut également indiquer un risque de saturation ou de rejet de la part des clients fortement sollicités.
 
 ### Pdays
 ![Distribbution de pdays](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20pdays.png?raw=true)
 
 📌 Interprétation - pdays :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
+La distribution de pdays met en évidence une forte concentration sur certaines valeurs spécifiques, traduisant des périodes standardisées de relance commerciale. Les valeurs élevées indiquent des clients peu ou jamais recontactés, ce qui peut influencer leur probabilité de souscription.
 
 ### Previous
 ![Distribbution de previous](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20previous.png?raw=true)
 
 📌 Interprétation - previous :
-- La distribution permet d’observer la forme générale (symétrique, asymétrique, extrêmes).
-- Une asymétrie indique une concentration des valeurs vers une borne.
-- La présence de pics suggère des groupes de clients distincts.
-
+La variable previous montre que la majorité des clients n’a eu que peu ou pas de contacts lors de campagnes précédentes. Cela suggère que la base clients est régulièrement renouvelée et que les campagnes antérieures ont un impact limité pour une grande partie de la population.
 ---
 
 # 5.3 BOXPLOTS 
@@ -263,95 +248,79 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 ![Boxplot de age](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20age.png?raw=true)
 
 📌 Interprétation - age :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+Le boxplot de l’âge révèle une dispersion modérée autour de la médiane, avec quelques valeurs aberrantes correspondant à des clients très âgés. Ces outliers restent cohérents dans un contexte bancaire et ne nécessitent pas forcément d’exclusion, mais ils doivent être pris en compte dans l’interprétation des résultats.
 
 ### Balance
 ![Boxplot de Balance](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20Balance.png?raw=true)
 
 📌 Interprétation - balance :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+Le boxplot du solde bancaire met en évidence de nombreux outliers positifs, confirmant une forte hétérogénéité financière entre les clients. Cette variabilité est typique des données bancaires et justifie l’utilisation de modèles robustes aux valeurs extrêmes, comme les méthodes ensemblistes.
 
 ### Day of week
 ![Boxplot de day_of_week](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20day%20of%20week.png?raw=true)
 
 📌 Interprétation - day_of_week :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+Le boxplot du jour de la semaine montre une faible dispersion autour de la médiane et peu de valeurs extrêmes. Cela indique une répartition relativement homogène des contacts sur les différents jours ouvrables, sans concentration excessive susceptible d’introduire un biais temporel dans les campagnes marketing.
 
 ### Duration
 ![Boxplot de duration](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20duration.png?raw=true)
 
 📌 Interprétation - duration :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+La présence de nombreux points extrêmes dans la durée des appels confirme une forte asymétrie de la variable. Ces valeurs élevées correspondent à des interactions longues, potentiellement associées à une forte probabilité de souscription, mais elles peuvent aussi biaiser certains algorithmes si elles ne sont pas correctement traitées.
 
 ### Campaign
 ![Boxplot de campaign](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20campaign.png?raw=true)
 
 📌 Interprétation - campaign :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+Le boxplot de la variable campaign met en évidence une distribution asymétrique avec plusieurs valeurs aberrantes. La majorité des clients est contactée un nombre limité de fois, tandis qu’un petit groupe fait l’objet de relances répétées, traduisant une stratégie commerciale ciblée mais potentiellement intrusive.
 
 ### Pdays
 ![Boxplot de pdays](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20pdays.png?raw=true)
 
 📌 Interprétation - pdays :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+Le boxplot de pdays révèle une distribution très asymétrique, marquée par des valeurs extrêmes élevées. Ces observations correspondent à des clients n’ayant pas été recontactés depuis longtemps, voire jamais, ce qui peut influencer significativement leur probabilité de souscription.
 
 ### Previous
 ![Boxplot de previous](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20previous.png?raw=true)
 
 📌 Interprétation - previous :
-- Les points isolés représentent des valeurs aberrantes (outliers).
-- Une boîte large indique une forte dispersion.
-- Une asymétrie de la boîte suggère une distribution biaisée.
+La variable previous présente une dispersion faible pour la majorité des observations, avec quelques valeurs extrêmes. Cela suggère que la plupart des clients ont eu peu de contacts lors des campagnes précédentes, alors qu’une minorité a été sollicitée de manière plus intensive.
 
 # 5.4 HEATMAP – Corrélations
 ![Matrice de corrélation](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Matrice%20de%20corr%C3%A9lation.png?raw=true)
 
 📌 Interprétation globale des corrélations :
-- Une corrélation proche de 1 ou -1 indique une relation forte.
-- Une valeur proche de 0 indique une indépendance.
-- Les relations fortes peuvent indiquer une redondance de variables.
-- Utile pour la sélection des variables dans les modèles prédictifs.
+La matrice de corrélation montre globalement de faibles corrélations entre les variables numériques, indiquant une faible redondance de l’information. La variable duration se distingue par une corrélation plus élevée avec la variable cible, ce qui confirme son pouvoir explicatif. L’absence de multi-colinéarité forte est favorable à l’utilisation de modèles comme la régression logistique.
 
 --- FEATURE ENGINEERING ---
 ✅ Nouvelles variables créées :
-  age_group  duration_min  total_contacts
-0    Senior      4.350000               1
-1    Adulte      2.516667               1
-2    Adulte      1.266667               1
-3    Senior      1.533333               1
-4    Adulte      3.300000               1
+![feature engineering](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Matrice%20de%20corr%C3%A9lation.png?raw=true)
 
-📌 Interprétation des nouvelles variables :
-- age_group : segmentation client plus claire.
-- duration_min : plus interprétable que les secondes.
-- total_contacts : estimation de la pression commerciale sur le client.
+Le feature engineering vise à enrichir le jeu de données initial en créant de nouvelles variables plus interprétables et plus pertinentes pour la modélisation prédictive. Dans cette analyse, trois nouvelles variables ont été construites:
+
+La variable **age_group** permet de segmenter les clients en classes d’âge homogènes, facilitant l’interprétation métier et l’identification des segments les plus susceptibles de souscrire à un dépôt à terme. Cette transformation réduit également la complexité liée à la variabilité individuelle de l’âge.
+
+La variable **duration_min**, obtenue par conversion de la durée des appels en minutes, améliore la lisibilité et l’interprétation de l’intensité des interactions commerciales, tout en conservant l’information essentielle contenue dans la variable initiale.
+
+Enfin, la variable **total_contacts**, qui agrège le nombre de contacts de la campagne en cours et des campagnes précédentes, fournit une mesure globale de la pression commerciale exercée sur le client. Cette information est particulièrement pertinente pour analyser l’impact de la fréquence des sollicitations sur la probabilité de souscription.
 
 ### Répartition par âge
 ![Répartition par groupe d'âge](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/R%C3%A9partition%20par%20groupe%20d'%C3%A2ge.png?raw=true)
 
-📌 Interprétation : Les adultes dominent le portefeuille clients.
+📌 Interprétation : 
+La segmentation en groupes d’âge montre une dominance claire des adultes, suivis des seniors. Cette représentation facilite l’interprétation métier et permet d’adapter les stratégies commerciales selon les segments démographiques les plus rentables.
 
 ### Durée (minutes)
 ![Distribution de la durée de contact](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20de%20la%20dur%C3%A9e%20de%20contact.png?raw=true)
 
-📌 Interprétation : Les appels courts dominent — peu d’appels longs très influents.
+📌 Interprétation : 
+La transformation de la durée en minutes améliore la lisibilité du phénomène observé. La dominance des appels courts confirme que l’efficacité commerciale repose sur un faible nombre d’interactions longues et qualitatives.
 
 ### Total contacts
 ![Distribution du nobre total de contacts](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Distribution%20du%20nombre%20total%20de%20contacts.png?raw=true)
 
-📌 Interprétation : La majorité des clients est contactée peu de fois, signe de ciblage sélectif.
+📌 Interprétation : 
+La majorité des clients est contactée peu de fois, ce qui traduit une stratégie de ciblage relativement sélective. Les clients très sollicités représentent une minorité, ce qui limite les coûts opérationnels tout en concentrant les efforts sur les profils jugés prometteurs.
 
 # 6. Résultats de la régression logisqtique et random forest
 
@@ -359,52 +328,43 @@ Ce pipeline technique constitue une base solide pour la prédiction client, tout
 ![Réression logisitique](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/R%C3%A9gression%20logistique.png?raw=true)
 
 📌 Interprétation :  
-* La régression logistique fournit une base simple pour prédire l'abonnement.
-* Si le recall sur la classe 1 (yes) est faible, le modèle a du mal à détecter les clients positifs.
-* Une bonne précision signifie peu de faux positifs.
-* Ce modèle est linéaire : il peut sous-performer si les relations ne sont pas linéaires.
+La régression logistique est utilisée comme modèle de référence en raison de sa simplicité et de sa forte interprétabilité. Elle permet d’estimer la probabilité de souscription à un dépôt à terme en fonction des caractéristiques du client, en supposant une relation linéaire entre les variables explicatives et le logarithme des chances de souscription.
+
+Les résultats montrent que ce modèle fournit des performances correctes, mais reste limité dans sa capacité à capturer des relations complexes et non linéaires entre les variables. En particulier, la détection des clients réellement susceptibles de souscrire peut être insuffisante, ce qui est problématique dans un contexte bancaire où le coût d’un faux négatif est élevé. Ainsi, la régression logistique constitue une base de comparaison pertinente, mais non optimale pour ce problème.
+
 
 # 6.2 Random forest
 ![Random forest](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/Random%20forest.png?raw=true)
 
 📌 Interprétation :
-* Ce modèle est souvent plus performant car il capture les non-linéarités.
-* Il réduit le surapprentissage grâce à l’agrégation de nombreux arbres.
-* Si le recall et la précision sont supérieurs à ceux de la régression logistique, le modèle est meilleur.
-* Random Forest est généralement le meilleur choix sur Bank Marketing.
+Le Random Forest est un modèle ensembliste basé sur l’agrégation de plusieurs arbres de décision, ce qui lui permet de capturer efficacement les interactions complexes et les relations non linéaires présentes dans les données. Il est également plus robuste face aux valeurs extrêmes et à l’hétérogénéité des profils clients.
 
+Les performances obtenues avec le Random Forest sont globalement supérieures à celles de la régression logistique, notamment en termes de rappel et de précision sur la classe des clients souscripteurs. Cette amélioration est particulièrement importante dans le cadre du ciblage marketing, car elle permet de réduire les faux négatifs et d’optimiser l’efficacité des campagnes. Le Random Forest apparaît ainsi comme le modèle le plus adapté pour ce cas d’usage.
+
+# 6.3 Analyse comparative
+En comparaison, la régression logistique offre une bonne lisibilité des résultats mais montre des limites face à la complexité des données, tandis que le Random Forest privilégie la performance prédictive au détriment de l’interprétabilité. Le choix final du modèle dépend donc d’un compromis entre compréhension métier et efficacité opérationnelle.
 ---
 
-# 7. INTERPRÉTATION GÉNÉRALE
+# 7. Conclusion
 
-| Point               | Conclusion             |
-| ------------------- | ---------------------- |
-| Dataset             | fiable                 |
-| Outliers            | nombreux               |
-| Corrélation         | faible sauf `duration` |
-| Feature engineering | pertinent              |
-| Problème potentiel  | fuite de données       |
+Cette étude montre que l’exploitation des données clients permet d’améliorer significativement l’efficacité des campagnes de télé-marketing bancaire. L’analyse met en évidence que tous les clients ne présentent pas le même potentiel de souscription et que certaines caractéristiques, notamment liées aux interactions commerciales, jouent un rôle déterminant dans la décision finale.
 
----
+La comparaison des modèles révèle que l’utilisation d’outils d’intelligence artificielle avancés, comme le Random Forest, permet de mieux identifier les clients à fort potentiel par rapport à des approches classiques. Cela se traduit concrètement par une réduction des appels inutiles, une meilleure allocation des ressources commerciales et une augmentation du taux de conversion des campagnes.
 
-# 8. CONCLUSION
-* L’EDA révèle la distribution, la présence potentielle d’outliers et les relations entre variables.
-* Le feature engineering enrichit les données pour améliorer les modèles.
-* La régression logistique sert de modèle de base linéaire.
-* Le Random Forest capture des relations plus complexes et donne souvent de meilleurs résultats.
-* La comparaison des métriques permet de choisir le meilleur modèle pour la prédiction de l'abonnement.
+D’un point de vue décisionnel, ces résultats confirment l’intérêt d’intégrer des modèles prédictifs dans le processus de ciblage afin de soutenir les équipes commerciales et d’orienter les actions vers les clients les plus susceptibles de générer de la valeur.
+
 ---
 
 ## Pistes d’amélioration
+* Ciblage plus fin des clients : Prioriser les clients avec une forte probabilité de souscription afin d’optimiser le temps des centres d’appels.
+* Réduction des coûts opérationnels : Limiter les contacts auprès des clients à faible potentiel pour diminuer les dépenses liées aux campagnes.
+* Intégration des coûts d’erreur : Ajuster les décisions en tenant compte du coût plus élevé des clients intéressés non contactés.
+* Pilotage en temps réel : Utiliser les prédictions pour ajuster les campagnes au fil de leur déroulement.
+* Aide à la décision commerciale : Fournir aux équipes des scores de probabilité simples à interpréter plutôt que des résultats techniques.
+* Amélioration continue : Mettre à jour régulièrement les modèles afin de s’adapter à l’évolution du comportement des clients.
 
-* Imputation intelligente
-* Encodage catégoriel
-* Standardisation
-* Sélection de variables
-* Validation croisée
-* Modélisation ML (Logistic, Random Forest, XGBoost)
-
+En conclusion, l’adoption d’un système de prédiction basé sur le machine learning constitue un levier stratégique de performance, permettant à la banque de concilier efficacité commerciale, maîtrise des coûts et amélioration de la relation client.
 ---
 
-✅ **Analyse exploratoire finalisée avec succès.**
+✅ **Analyse finalisée avec succès.**
 
