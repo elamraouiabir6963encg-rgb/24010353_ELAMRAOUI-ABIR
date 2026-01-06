@@ -269,6 +269,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 ### Balance
 ![Boxplot de Balance](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Boxplot%20de%20Balance.png?raw=true)
+
 📌 Interprétation - balance :
 - Les points isolés représentent des valeurs aberrantes (outliers).
 - Une boîte large indique une forte dispersion.
