@@ -7,7 +7,7 @@
 
 ---
 
-## 1. Le Contexte Métier et la Mission
+## 1. Problématique Métier et Objectifs de la Mission
 
 ### Le Problème (Business Case)
 Les banques utilisent des campagnes de télé‑marketing pour convaincre les clients de souscrire à un dépôt à terme. Or :
