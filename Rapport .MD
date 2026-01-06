@@ -159,6 +159,34 @@ rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
 
 ```
+Voici un **commentaire développé et professionnel** pour la section *Code* de ton rapport :
+
+---
+
+### **🔧 Implémentation Technique : Préparation et Modélisation des Données**
+
+Le code présenté ci-dessus illustre l’intégralité du pipeline de traitement et de modélisation appliqué au dataset **Bank Marketing (UCI)**. Il suit une approche méthodologique rigoureuse, structurée autour de quatre axes principaux :
+
+1. **Chargement et consolidation des données**, permettant d’unifier les variables explicatives (`X`) et la variable cible (`y`) dans un même DataFrame pour faciliter l’analyse et le prétraitement.
+2. **Analyse statistique des variables numériques (EDA)**, réalisée à l’aide d’histogrammes, de boxplots et d’une matrice de corrélation. Cette étape permet d’examiner :
+
+   * la forme des distributions,
+   * la dispersion des données,
+   * ainsi que la présence de valeurs extrêmes pouvant influencer les performances des modèles prédictifs.
+3. **Feature Engineering**, visant à enrichir le jeu de données par la création de nouvelles variables plus interprétables et pertinentes pour le métier bancaire, notamment :
+
+   * `age_group` pour la segmentation client,
+   * `duration_min` pour convertir la durée d’appel en minutes,
+   * et `total_contacts` pour mesurer l’intensité du contact marketing.
+4. **Modélisation supervisée**, basée sur deux algorithmes complémentaires :
+
+   * **La Régression Logistique**, utilisée comme modèle linéaire de référence (baseline), adaptée à une première estimation de la probabilité de souscription.
+   * **Le Random Forest**, modèle non-linéaire puissant, capable de capturer des interactions complexes entre les variables et de réduire le risque de surapprentissage grâce à l’agrégation d’arbres multiples.
+
+L’encodage des variables catégorielles via `OneHotEncoder` et l’utilisation d’un `ColumnTransformer` garantissent un prétraitement optimal avant l’entraînement des modèles. Enfin, la division des données en ensembles d’apprentissage et de test (`train_test_split`) respecte la distribution de la classe cible (`stratify=y`), assurant une évaluation fiable des performances.
+
+Ce pipeline technique constitue une base solide pour la prédiction client, tout en tenant compte de l’enjeu prioritaire du projet : **minimiser les faux négatifs en maximisant le rappel de la classe positive**, dans un contexte où le coût des erreurs est fortement asymétrique.
+
 ---
 
 # 5. RÉSULTATS DE L'ANALYSE EXPLORATOIRE (EDA)
