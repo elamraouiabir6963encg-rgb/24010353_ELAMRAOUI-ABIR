@@ -356,6 +356,7 @@ D’un point de vue décisionnel, ces résultats confirment l’intérêt d’in
 ---
 
 ## Pistes d’amélioration
+
 * Ciblage plus fin des clients : Prioriser les clients avec une forte probabilité de souscription afin d’optimiser le temps des centres d’appels.
 * Réduction des coûts opérationnels : Limiter les contacts auprès des clients à faible potentiel pour diminuer les dépenses liées aux campagnes.
 * Intégration des coûts d’erreur : Ajuster les décisions en tenant compte du coût plus élevé des clients intéressés non contactés.
@@ -364,6 +365,8 @@ D’un point de vue décisionnel, ces résultats confirment l’intérêt d’in
 * Amélioration continue : Mettre à jour régulièrement les modèles afin de s’adapter à l’évolution du comportement des clients.
 
 En conclusion, l’adoption d’un système de prédiction basé sur le machine learning constitue un levier stratégique de performance, permettant à la banque de concilier efficacité commerciale, maîtrise des coûts et amélioration de la relation client.
+
+
 ---
 
 ✅ **Analyse finalisée avec succès.**
