@@ -19,16 +19,14 @@ Cependant, ces campagnes présentent plusieurs limites opérationnelles et finan
 Ainsi, la banque se trouve confrontée à un défi majeur :
 *   **Comment identifier, avant même l’appel, les clients ayant la plus forte probabilité de souscrire à un dépôt à terme, afin d’optimiser les ressources et maximiser le rendement des campagnes ?** 
 
-### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
+### L’Enjeu décisionnel : Une matrice de coûts d’erreur asymétrique
 Contrairement à des problématiques classiques de classification, ici toutes les erreurs n’ont pas le même impact :
-    *   Faux Positif: un client est prédit comme intéressé alors qu’il ne souscrira pas                                                          → Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels.
-    *   Faux Négatif: un client réellement intéressé est classé comme non pertinent                                                              → Manque à gagner commercial direct, perte potentielle de valeur client à long terme. 
-        ➤  Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels
-Faux Négatif (FN) : un client réellement intéressé est classé comme non pertinent 
-         ➤  Manque à gagner commercial direct, perte potentielle de valeur client à long terme
+*   Faux Positif: un client est prédit comme intéressé alors qu’il ne souscrira pas                                                    → Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels.
+*   Faux Négatif: un client réellement intéressé est classé comme non pertinent
+→ Manque à gagner commercial direct, perte potentielle de valeur client à long terme.
 
 Dans ce contexte, la priorité stratégique n’est pas seulement la précision, mais surtout :
-**Maximiser le rappel de la classe positive, afin de réduire au maximum les faux négatifs et ne pas laisser passer les clients intéressés.**
+*   **Maximiser le rappel de la classe positive, afin de réduire au maximum les faux négatifs et ne pas laisser passer les clients intéressés** 
 
 ### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
 La mission consiste donc à concevoir un Assistant IA d’aide au ciblage client, basé sur le machine learning, permettant de :
