@@ -308,7 +308,9 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 📌 Interprétation : La majorité des clients est contactée peu de fois, signe de ciblage sélectif.
 
-### RÉGRESSION LOGISTIQUE
+# 6. Résultats de la régression logisqtique et random forest
+
+# 6.1 Régression logistique
 ![Réression logisitique](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/R%C3%A9gression%20logistique.png?raw=true)
 
 📌 Interprétation :  
@@ -317,7 +319,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 * Une bonne précision signifie peu de faux positifs.
 * Ce modèle est linéaire : il peut sous-performer si les relations ne sont pas linéaires.
 
-### RANDOM FOREST
+# 6.2 Random forest
 ![Random forest](https://github.com/elamraouiabir6963encg-rgb/24010353_ELAMRAOUI-ABIR/blob/main/Image/Random%20forest.png?raw=true)
 
 📌 Interprétation :
@@ -328,7 +330,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 ---
 
-# 6. INTERPRÉTATION GÉNÉRALE
+# 7. INTERPRÉTATION GÉNÉRALE
 
 | Point               | Conclusion             |
 | ------------------- | ---------------------- |
@@ -340,7 +342,7 @@ Forte présence de valeurs extrêmes → besoin de prudence en modélisation.
 
 ---
 
-# 7. CONCLUSION
+# 8. CONCLUSION
 * L’EDA révèle la distribution, la présence potentielle d’outliers et les relations entre variables.
 * Le feature engineering enrichit les données pour améliorer les modèles.
 * La régression logistique sert de modèle de base linéaire.
