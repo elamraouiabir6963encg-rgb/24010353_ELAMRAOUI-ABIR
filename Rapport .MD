@@ -47,6 +47,7 @@ Pour répondre à cette mission, nous exploitons le dataset *Bank Marketing (UCI
 *   Variable cible (y) : souscription au dépôt à terme → yes ou no
 *   Taille et format : 45 211 observations, 17 variables, données tabulaires, mélangeant variables numériques et catégorielles
 Ces données permettent au modèle d’apprendre à partir de tendances comportementales réelles, tout en tenant compte des contraintes économiques du métier.
+
 ![Aperçu des données](https://github.com/elamraouiabir6963encg-rgb/Projet-Dataset-Machine-learning/blob/main/Image/Aper%C3%A7u%20des%20donn%C3%A9es.png?raw=true)
 ---
 
