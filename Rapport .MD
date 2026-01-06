@@ -159,11 +159,8 @@ rf_model.fit(X_train, y_train)
 y_pred_rf = rf_model.predict(X_test)
 
 ```
-Voici un **commentaire développé et professionnel** pour la section *Code* de ton rapport :
-
 ---
-
-### **🔧 Implémentation Technique : Préparation et Modélisation des Données**
+### **Interprétation du script Python**
 
 Le code présenté ci-dessus illustre l’intégralité du pipeline de traitement et de modélisation appliqué au dataset **Bank Marketing (UCI)**. Il suit une approche méthodologique rigoureuse, structurée autour de quatre axes principaux :
 
