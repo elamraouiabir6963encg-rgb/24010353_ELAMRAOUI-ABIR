@@ -28,9 +28,9 @@ Contrairement à des problématiques classiques de classification, ici toutes le
 → Manque à gagner commercial direct, perte potentielle de valeur client à long terme.
 
 Dans ce contexte, la priorité stratégique n’est pas seulement la précision, mais surtout :
-*   **Maximiser le rappel de la classe positive, afin de réduire au maximum les faux négatifs et ne pas laisser passer les clients intéressés** 
+*   **Maximiser le rappel de la classe positive, afin de réduire au maximum les faux négatifs et ne pas laisser passer les clients intéressés.** 
 
-### L’Enjeu décisionnel : Une mlatrice de coûts d’erreur asymétrique
+###  Objectifs de la mission IA
 La mission consiste donc à concevoir un Assistant IA d’aide au ciblage client, basé sur le machine learning, permettant de :
 *   Analyser le comportement et le profil client.
 *   Prédire la probabilité de souscription avant le contact téléphonique.
