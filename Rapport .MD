@@ -11,18 +11,20 @@
 
 ### Problématique du métier
 Dans le secteur bancaire, les campagnes de télé-marketing constituent un levier stratégique pour promouvoir les dépôts à terme, un produit d’épargne essentiel pour assurer la liquidité et la stabilité financière des banques.
+
 Cependant, ces campagnes présentent plusieurs limites opérationnelles et financières :
-    *   Coûts élevés liés aux centres d’appels.
-    *   Taux de conversion faible, car la majorité des clients contactés ne souscrivent pas au produit.
-    *   Ciblage inefficace, entraînant une surcharge des agents et une allocation non optimale du budget marketing. 
-    *   Perte d’opportunités commerciales,  lorsque des clients potentiellement intéressés ne sont pas identifiés à temps.
+*   Coûts élevés liés aux centres d’appels.
+*   Taux de conversion faible, car la majorité des clients contactés ne souscrivent pas au produit.
+*   Ciblage inefficace, entraînant une surcharge des agents et une allocation non optimale du budget marketing. 
+*   Perte d’opportunités commerciales,  lorsque des clients potentiellement intéressés ne sont pas identifiés à temps.
+
 Ainsi, la banque se trouve confrontée à un défi majeur :
 *   **Comment identifier, avant même l’appel, les clients ayant la plus forte probabilité de souscrire à un dépôt à terme, afin d’optimiser les ressources et maximiser le rendement des campagnes ?** 
 
 ### L’Enjeu décisionnel : Une matrice de coûts d’erreur asymétrique
 Contrairement à des problématiques classiques de classification, ici toutes les erreurs n’ont pas le même impact :
-*   Faux Positif: un client est prédit comme intéressé alors qu’il ne souscrira pas                                                    → Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels.
-*   Faux Négatif: un client réellement intéressé est classé comme non pertinent
+*   **Faux Positif:** un client est prédit comme intéressé alors qu’il ne souscrira pas                                                    → Coût opérationnel inutile, perte de temps agent, saturation des lignes d’appels.
+*   **Faux Négatif:** un client réellement intéressé est classé comme non pertinent
 → Manque à gagner commercial direct, perte potentielle de valeur client à long terme.
 
 Dans ce contexte, la priorité stratégique n’est pas seulement la précision, mais surtout :
